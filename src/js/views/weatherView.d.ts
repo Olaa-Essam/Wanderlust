@@ -1,0 +1,46 @@
+import APIManager from "../managers/APIManager.js";
+import StorageManager from "../managers/storageManager.js";
+export default class WeatherView {
+    private apiManager;
+    private storageManager;
+    private weatherSelection;
+    private weatherSelectionCountryFlag;
+    private weatherSelectionCountryName;
+    private weatherSelectionCity;
+    private weatherEmptyState;
+    private weatherHeroCard;
+    private weatherCurrnetLocationElement;
+    private weatherCurrnetDateElement;
+    private weatherCurrnetIconElement;
+    private weatherCurrnetTempElement;
+    private weatherCurrnetConditionElement;
+    private weatherCurrnetFeelsElement;
+    private weatherCurrnetMaxElement;
+    private weatherCurrnetMinElement;
+    private weatherGridHumidityElement;
+    private weatherGridHumidityPresentElement;
+    private weatherGridWindElement;
+    private weatherGridWindDirElement;
+    private weatherGridUVElement;
+    private weatherGridUVLevelElement;
+    private weatherGridRainElement;
+    private weatherGridRainMMElement;
+    private weatherGridSunriseTimeElement;
+    private weatherGridSunProgressElement;
+    private weatherGridSunsetTimeElement;
+    private weather;
+    constructor(apiManager: APIManager, storageManager: StorageManager);
+    activateView(): Promise<void>;
+    private findElements;
+    private setSelection;
+    private loadContent;
+    private renderCurrentWeather;
+    private renderGridWeather;
+    private getWeatherDetails;
+    private getCurrentDateByTimezone;
+    private getWindDirectionText;
+    private formatTimeFromISO;
+    private getUvIndexDetails;
+    private calculateSunProgress;
+}
+//# sourceMappingURL=weatherView.d.ts.map
